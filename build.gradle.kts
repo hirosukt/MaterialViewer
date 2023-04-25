@@ -29,10 +29,7 @@ repositories {
  */
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:$pluginVersion-R0.1-SNAPSHOT")
-    implementation("love.chihuyu:ChihuyuLib:0.1.4")
-    implementation("dev.jorel:commandapi-core:9.0.0")
-    implementation("dev.jorel:commandapi-kotlin:8.8.0")
+    compileOnly("org.github.paperspigot:paperspigot-api:$pluginVersion-R0.1-SNAPSHOT")
     implementation(kotlin("stdlib"))
 }
 
