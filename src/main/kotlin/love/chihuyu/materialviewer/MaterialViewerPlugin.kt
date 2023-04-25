@@ -23,7 +23,7 @@ class MaterialViewerPlugin: JavaPlugin(), Listener {
     @EventHandler
     fun onClick(e: PlayerInteractEvent) {
         if (!e.hasItem()) return
-        if (e.player.itemInHand.type != Material.STICK || e.player.itemInHand.itemMeta?.displayName != "MaterialViewer") return
+        if (e.player.itemInHand?.type != Material.STICK || e.player.itemInHand?.itemMeta?.displayName != "MaterialViewer") return
         e.isCancelled = true
         e.player.sendMessage(e.clickedBlock.type.name)
     }
