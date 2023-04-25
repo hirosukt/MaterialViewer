@@ -78,7 +78,7 @@ nexusPublishing {
 }
 
 kotlin {
-    jvmToolchain(18)
+    jvmToolchain(8)
 }
 
 open class SetupTask : DefaultTask() {
